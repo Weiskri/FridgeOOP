@@ -36,9 +36,44 @@ namespace FridgeOOP
             set { this.bulbsWork = value; }
         }
 
-
         //constructors
 
-        //methods()
+        public Fridge ()
+        {
+            this.dispenserType = "basic water dispenser";
+        }
+
+        public Fridge (string dispenserType)
+        {
+            this.dispenserType = dispenserType;
+        }
+
+        public Fridge (bool isClean, string dispenserType, int foodAmount, bool bulbsWork)
+        {
+            this.isClean = isClean;
+            this.dispenserType = dispenserType;
+            this.foodAmount = foodAmount;
+            this.bulbsWork = bulbsWork;
+        }
+
+        //Methods()
+
+        // Dispense Water
+
+        public void DispenseWater()
+        {
+            if (dispenserType == "basic water dispenser")
+            {
+                Console.WriteLine("Here's some lukewarm water.");
+            }
+            else if (dispenserType == "deluxe dispenser")
+            {
+                Console.WriteLine("Enjoy your perfect icewater.");
+            }
+            else
+            {
+                Console.WriteLine("What's gonna come out? It's a surprise!");
+            }
+        }
     }
 }

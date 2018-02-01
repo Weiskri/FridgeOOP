@@ -89,9 +89,10 @@ namespace FridgeOOP
             }
         }
 
-        public void RemoveFood(int foodRemoved)
+        public int RemoveFood(int foodRemoved)
         {
             foodAmount -= foodRemoved; // this subtracts food removed from food amount
+            return foodAmount;
         }
 
         public string CheckSupplies()

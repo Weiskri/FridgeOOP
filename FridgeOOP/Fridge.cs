@@ -112,7 +112,7 @@ namespace FridgeOOP
 
         public string Clean ()
         {
-            if (isClean == false) // like saying "is true"
+            if (isClean == false) 
             {
                 isClean = true; // change the value to true because the fridge is being cleaned!
                 return "I cleaned the fridge.";

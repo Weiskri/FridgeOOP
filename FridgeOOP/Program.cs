@@ -48,7 +48,7 @@ namespace FridgeOOP
                     case 5:
                         Console.WriteLine(userFridge.CheckSupplies());
                         break;
-                    case 6:
+                    case 6: // display all fridge details
                         Console.WriteLine("The dispenser type is " + userFridge.DispenserType);
                         Console.WriteLine("It is " + userFridge.BulbsWork + " that the bulbs work.");
                         Console.WriteLine("It is " + userFridge.IsClean + " that the fridge is clean.");
